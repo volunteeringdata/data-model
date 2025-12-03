@@ -12,3 +12,8 @@ Each version also corresponds to a tagged git commit.
 ## Version 1
 
 Basic modelling of volunteer-involving organisations and volunteering activities.
+
+
+## Version 2
+
+Incorporate feedback from the first Volunteering Standards Working Group session held on the 14th of November 2025 ([v2](https://github.com/openvolunteering/data-model/tree/v2)).
