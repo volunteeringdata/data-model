@@ -17,6 +17,16 @@ prefix skos:            <http://www.w3.org/2004/02/skos/core#>
 prefix time:            <http://www.w3.org/2006/time#>
 prefix vann:            <http://purl.org/vocab/vann/>
 
+
+## Main Concept
+:Accessibility
+    a owl:Class ;
+    rdfs:isDefinedBy id:schema ;
+    rdfs:subClassOf :Concept ;
+    :conceptLabel "Accessibility"@en ;
+    :description "Any accessibility information related to volunteering activities."@en ;
+.
+
 ## Concept Subclasses
 :DigitalAccessibility
     a owl:Class ;
@@ -35,20 +45,20 @@ prefix vann:            <http://purl.org/vocab/vann/>
 .
 
 ## Accessibility Concepts
-[
-    a :Accessibility ;
+:ExpensesPaid
+    rdfs:subClassOf :Accessibility ;
     rdfs:label "Expenses Paid" ;
     rdfs:comment "Any information regarding reimbursement for activity or role-related expenses.";
-] .
+.
 
 [
-    a :Accessibility ;
+    rdfs:subClassOf :Accessibility ;
     rdfs:label "Age Requirements" ;
     rdfs:comment "Any information regarding specific ages or ranges of ages required or disallowed from a activity." ;
 ] .
 
 [
-    a :Accessibility ;
+    rdfs:subClassOf :Accessibility ;
     rdfs:label "Language Requirements" ;
     rdfs:comment "Any language information for an activity, including required language(s) and translation services available." ;
 ] .
